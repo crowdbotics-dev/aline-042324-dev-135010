@@ -11,7 +11,7 @@ COPY . .
 RUN yarn install && yarn run web:build
 
 
-FROM crowdbotics/cb-django:3.8-slim-buster AS release
+FROM crowdbotics/cb-django:3.9-slim-buster AS release
 ARG SECRET_KEY
 
 # Set Working directory
