@@ -1,4 +1,4 @@
-FROM crowdbotics/cb-django:3.8-slim-buster AS build
+FROM crowdbotics/cb-django:3.9-slim-buster AS build
 
 # Copy dependency management files and install app packages to /.venv
 COPY backend/Pipfile backend/Pipfile.lock /
